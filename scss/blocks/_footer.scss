@@ -1,0 +1,132 @@
+.site-footer {
+  padding: 80px 0 29px;
+  background-color: #0b7572;
+}
+.footer-wrapper {
+  @include display($ai: start, $jc: space-between);
+  margin-bottom: 80px;
+}
+.footer__list-wrapper {
+  display: flex;
+  gap: 97px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer__link {
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  transition: color 0.3s linear;
+  &:hover {
+    color: #ff9619;
+  }
+}
+.footer__contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.footer__social-wrapper {
+  display: flex;
+  gap: 14px;
+}
+.footer__social {
+  color: white;
+  transition: color 0.3s linear;
+  &:hover {
+    color: #ff9619;
+  }
+}
+.footer__btn {
+  color: rgb(255, 255, 255);
+  font-family: "PT sans";
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 11px;
+  border: none;
+  background: rgb(255, 150, 25);
+  border: 3px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: color 0.3s linear;
+  &:hover {
+    background-color: white;
+    border-color: rgb(255, 150, 25);
+    color: rgb(255, 150, 25);
+  }
+}
+.footer__text {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: capitalize;
+}
+@media (max-width: 950px) {
+  .site-footer {
+    padding: 41px 0 21px;
+  }
+  .footer__link-img {
+    width: 93px;
+    height: 46px;
+  }
+  .footer__list-wrapper {
+    gap: 50px;
+  }
+  .footer__link {
+    font-size: 10px;
+  }
+  .footer__btn {
+    font-size: 10px;
+  }
+  .footer__text {
+    font-size: 10px;
+  }
+}
+@media (max-width: 730px) {
+  .site-footer {
+    padding: 14px 0 28px;
+  }
+  .footer__link-img {
+    width: 61px;
+    height: 33px;
+    margin-bottom: 23px;
+  }
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  .footer__list-wrapper {
+    gap: 50px;
+    margin-bottom: 23px;
+  }
+  .footer__link {
+    font-size: 10px;
+  }
+  .footer__btn {
+    font-size: 10px;
+  }
+  .footer__text-wrapper{
+    width: 161px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .footer__text {
+    font-size: 10px;
+  }
+}

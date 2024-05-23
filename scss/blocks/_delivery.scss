@@ -1,0 +1,94 @@
+.delivery-section {
+  padding: 80px 0 166px;
+}
+.delivery__title {
+  @include titleStyle($fs: 48px);
+  margin-bottom: 48px;
+}
+.delivery__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 62px;
+}
+.delivery__item {
+  display: flex;
+  gap: 56px;
+  padding: 32px 132px 32px 96px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
+  background: rgb(255, 255, 255);
+}
+.delivery__img {
+  object-fit: cover;
+}
+.delivery__item-content {
+  width: 568px;
+}
+.delivery__item-title {
+  @include titleStyle($fs: 20px);
+  margin-bottom: 24px;
+}
+.delivery__item-line {
+  width: 86px;
+  height: 3px;
+  background-color: rgb(255, 206, 80);
+  margin-bottom: 24px;
+}
+.delivery__item-text {
+  @include textStyle($fs: 16px);
+}
+.delivery__truck-img{
+    margin: 0 auto;
+    display: block;
+    max-width: 1245px;
+}
+@media (max-width:1290px){
+    .delivery__truck-img{
+        margin: 0 auto;
+        display: block;
+        max-width: 980px;
+        height: 530px;
+    }
+}
+@media (max-width:1040px){
+    .delivery-section {
+        padding: 44px 0 126px;
+      }
+    .delivery__title {
+        @include titleStyle($fs: 44px);
+        text-align: center;
+      }
+    .delivery__img{
+        display: none;
+    }
+    .delivery__item-wrapper {
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 125px;
+      }
+    .delivery__item {
+        width: 693px;
+        padding: 40px 76px 48px 85px;
+      }
+    .delivery__truck-img{
+        max-width: 675px;
+        height: 475px;
+    }
+}
+@media (max-width:730px){
+    .delivery-section {
+        padding: 28px 0 25px;
+      }
+    .delivery__title {
+       display: none;
+      }
+    .delivery__item-wrapper {
+       display: none;
+      }
+    .delivery__truck-img{
+        max-width: 327px;
+        height: 196px;
+    }
+}
